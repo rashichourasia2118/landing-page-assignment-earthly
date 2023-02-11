@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-weight: bold;
+    vertical-scrolling:none;
+}
+
+.main {
+    background-color: transparent;
+    /* position:absolute; */
+}
+
+
+/* navbar */
+
+.Navbar {
+    background-color: #424874;
+    font-family: 'Abel', sans-serif;
+    font-size: 1rem;
+}
+
+.Navbar h2 {
+    color: #CACFD6;
+    font-family: 'Abel', sans-serif;
+    padding: 15px;
+}
+
+.Navbar .toggle {
+    background-color: #DCD6F7;
+}
+
+.Navbar img {
+    background-color: #CACFD6;
+    border-radius: 25px;
+    padding: 2px;
+    height: 50px;
+    width: 50px;
+}
+
+.Navbar img:hover {
+    size: 1.2rem;
+}
+
+.Navbar .nav-link {
+    color: #F5F2ED;
+    font-family: 'Abel', sans-serif;
+}
+
+a.nav-link:hover {
+    color: #F5F2ED;
+    font-size: 1.2rem;
+    font-weight: bolD;
+    transition-duration: 1s;
+    font-family: 'Abel', sans-serif;
+    ;
+}
+
+.Navbar .Nav-item-margin {
+    margin-left: 75%;
+}
+
+
+
+
+.services {
+    position: relative;
+}
+
+.services .heading {
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.services .description {
+    padding-top: 15px;
+}
+
+.services img {
+    border: 5px solid #424874;
+    border-radius: 5px;
+}
+
+.services img:hover {
+    border: 5px solid #424874;
+    border-radius: 20px;
+}
+
+.services .p-name {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #424874;
+    font-family: 'Abel', sans-serif;
+    position: relative;
+}
+
+.footer h5 {
+    color: #CACFD6;
+}
+
+.footer .footer-items {
+    color: #F5F2ED;
+}
+
+.footer img {
+    margin: 2rem;
+    background-color: #CACFD6;
+    border-radius: 75px;
+}
+
+.footer .section .heading {
+    color: #CACFD6;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer .section a {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.footer .section a:hover {
+    font-size: 1.50rem;
+}
+
+.footer .links {
+    color: #DCD6F7;
+}
+
+.footer .links .heading {
+    font-size: 2rem;
+}
+
+.footer .links li {
+    margin-top: 8px;
+}
+
+.footer .links .icon-item {
+    color: #CACFD6;
+}
+
+.section2 {
+    display: flex;
+    justify-content:space-between;
+}
+
+.container2 {
+    margin-left: 1rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.container2 .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container2 .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container2 .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container2 .card:after {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.container2 .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.container2 .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container2 .card .imgBx img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 200px;
+}
+
+.container2 .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container2 .card:hover .contentBx {
+    height: 210px;
+}
+
+.container2 .card .contentBx h2 {
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #424874;
+    margin: 0;
+}
+
+.container2 .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border: 2px solid #424874;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+}
+
+.container2 .card:hover .contentBx a,
+.container2 .card:hover .contentBx h3 {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+.container2 .card:hover .contentBx a:hover {
+    background: #424874;
+    color: white;
+}
